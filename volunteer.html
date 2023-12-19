@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Volunteer Form</title>
+    <link rel="stylesheet" href="dform.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="r_form_wrap">
+
+            <div class="title">
+                <p>Volunteer Form</p>
+            </div>
+
+            <div class="r_form">
+                <form action="volunteer.php" method="post">
+                    <div class="input_wrap">
+                        <label for="yourname">Your Name</label>
+                        <div class="input_item">
+                            <span class="icon">
+                                <ion-icon name="person-sharp"></ion-icon>
+                            </span>
+                            <input type="text" name="name" class="input" id="yourname">
+                        </div>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="emailaddress">Email Address</label>
+                        <div class="input_item">
+                            <span class="icon">
+                                <ion-icon name="mail-sharp"></ion-icon>
+                            </span>
+                            <input type="text" name="email" class="input" id="emailaddress">
+                        </div>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="phone">Phone</label>
+                        <div class="input_item">
+                            <span class="icon">
+                                <ion-icon name="call-sharp"></ion-icon>
+                            </span>
+                            <input type="number" name="phone" class="input" id="phone">
+                        </div>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="phone">Location</label>
+                        <div class="input_item">
+                            <input type="text" name="location" class="input" id="location"
+                                placeholder="Location Address">
+                        </div>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="availability">Availability for work</label>
+                        <div class="input_item">
+                            <input type="text" name="availability" class="input" id="availability"
+                                placeholder="Days available">
+                        </div>
+                    </div>
+                    <button>Volunteer Now</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

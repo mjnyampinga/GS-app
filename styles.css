@@ -1,0 +1,724 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /*----------- header section ----------------*/
+  .header {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("https://source.unsplash.com/1600x900/?donate,charity,child,gorilla,environment,food waste");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .header .logo img {
+    margin: 30px;
+    width: 150px;
+    border-radius: 30px;
+  }
+  
+  nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav img {
+    width: 150px;
+  }
+  
+  .nav-links {
+    flex: 1; /*WILL OCCUPY ALL THE SPACE IN THE ROW*/
+    text-align: right;
+    transition: 1s;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+  .nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  
+  .nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links ul li a:hover {
+    color: rgb(1, 161, 1);
+  }
+  
+  /*----------- text-box section ----------------*/
+  .text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .text-box h1 {
+    font-size: 62px;
+  }
+  
+  .text-box p {
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 3px solid #bab8cc;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  .stakeholder-col .hero-btn {
+    background-color: #08070e;
+  }
+  
+  .hero-btn:hover {
+    border: 3px solid #f44336;
+    background: #f44336, #fff;
+    transition: 0.5s;
+  }
+  
+  nav .fa {
+    display: none;
+  }
+  
+  @media (max-width: 700px) {
+    .text-box h1 {
+      font-size: 20px;
+    }
+  
+    .nav-links ul li {
+      display: block;
+    }
+  
+    .nav-links {
+      position: absolute;
+      background: #f44336;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+    nav .fa {
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+  
+    .nav-links ul {
+      padding: 30px;
+    }
+  }
+  
+  /*----------- stakeholders section ----------------*/
+  
+  .stakeholders {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+  
+  .row {
+    margin-top: 5%;
+    display: block;
+    flex-direction: column;
+  }
+  .row1 {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .block-indentation {
+    display: inline-block;
+    margin-left: 20px; /* Adjust the indentation value as needed */
+  }
+  .stakeholder-col {
+    flex-basis: 31%;
+    background: #f3d4d4;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    align-items: center;
+  }
+  
+  h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: black;
+  }
+  .stakeholder-col p {
+    color: black;
+  }
+  
+  .stakeholder-col:hover {
+    cursor: progress;
+    box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.425);
+  }
+  
+  .hero-btn1 {
+    display: inline-block;
+    text-decoration: none;
+    color: #31139e;
+    border: 3px solid #3014ad;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .hero-btn1:hover {
+    border: 3px solid #f44336;
+    background: #f44336, #fff;
+    transition: 0.5s;
+  }
+  @media (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+  /*----------Offices section----------------*/
+  
+  .offices {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .offices p {
+    margin-left: 0;
+  }
+  .row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .office-col {
+    flex-basis: 31%;
+    background: #a09c9c;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .office-col img {
+    width: 100%;
+    display: block;
+  }
+  
+  .layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+  
+  .layer:hover {
+    background: rgba(226, 0, 0, 0.7);
+  }
+  .layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .layer:hover h3 {
+    bottom: 49%;
+    opacity: 1;
+  }
+  
+  /*-----------Gratitude section----------------*/
+  
+  .gratitude {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  .gratitude-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    background: #a09c9c;
+    padding: 20px 12px;
+    cursor: pointer;
+    display: flex;
+  }
+  
+  .gratitude-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 70%;
+  }
+  
+  /*-----------Join Us section----------------*/
+  
+  .join-us {
+    margin: 100px auto;
+    width: 80%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("https://source.unsplash.com/1600x900/?donate,charity,child,gorilla,environment,food waste");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .join-us p {
+    color: #fff;
+  }
+  .join-us h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+  
+  @media (max-width: 700px) {
+    .gratitude-col img {
+      margin-left: 0px;
+      margin-right: 15px;
+    }
+  }
+  
+  /*-----------Footer section----------------*/
+  
+  .footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  .icons .fa {
+    color: #34077c;
+    cursor: pointer;
+    margin: 0px 13px;
+    border-radius: 50%;
+    padding: 18px 0;
+  }
+  .fa-heart-o {
+    color: #df180a;
+  }
+  
+  /*-----------About Us Section----------------*/
+  
+  .sub-header {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("https://source.unsplash.com/1600x900/?donate,charity,child,gorilla,environment,food waste");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .values,
+  .volunteer-details {
+    margin-bottom: 20px;
+  }
+  .values > h1,
+  .volunteer-details > h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .values p,
+  .volunteer-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .values ul,
+  .volunteer-details ul {
+    list-style: disc;
+    margin-left: 50px;
+  }
+  
+  .sub-header h1 {
+    margin-top: 100px;
+    font-family: "Ephesis", cursive;
+    font-size: 50px;
+  }
+  .sub-header .logo img {
+    margin: 30px;
+    width: 150px;
+    border-radius: 30px;
+  }
+  .sub-header1 .logo img {
+    margin: 30px;
+    width: 150px;
+    border-radius: 30px;
+  }
+  .sub-header2 .logo img {
+    margin: 30px;
+    width: 150px;
+    border-radius: 30px;
+  }
+  .sub-header3 .logo img {
+    margin: 30px;
+    width: 150px;
+    border-radius: 30px;
+  }
+  
+  .about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  
+  .about-col {
+    flex-basis: 48%;
+    padding: 30px 2px;
+  }
+  .about-col img {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .about-col h1 {
+    padding-top: 0;
+  }
+  
+  .hbt-btn {
+    border: 1px solid #34077c;
+    background: transparent;
+    color: #34077c;
+  }
+  
+  /*------------Key Supporters----------------*/
+  .sub-header3 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("https://source.unsplash.com/1600x900/?donate,charity,child,gorilla,environment,food waste");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .sub-header3 h1 {
+    margin-top: 100px;
+    font-family: "Ephesis", cursive;
+    font-size: 50px;
+  }
+  
+  .key-supporters {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .key-supporters-col {
+    flex-basis: 31%;
+    background: #ecdede;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  
+  .key-supporters-col :hover {
+    cursor: pointer;
+    background: #22c854;
+    transform: translateX(10px);
+  }
+  .key-supporters-col img {
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  .key-supporters-col p {
+    padding: 0;
+    color: black;
+  }
+  
+  .key-supporters-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+    color: black;
+  }
+  
+  /*-----------Blog Content----------------*/
+  .sub-header1 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("https://source.unsplash.com/1600x900/?donate,charity,child,gorilla,environment,food waste");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .sub-header1 h1 {
+    margin-top: 100px;
+    font-family: "Ephesis", cursive;
+    font-size: 50px;
+  }
+  
+  .blog {
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+  }
+  
+  .blog-left {
+    flex-basis: 65%;
+    background-color: #645c5c;
+  }
+  
+  .blog-left img {
+    width: 100%;
+  }
+  
+  .blog-left h2 {
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+  }
+  
+  .blog-left p {
+    color: #999;
+  }
+  
+  .blog-right {
+    flex-basis: 32%;
+  }
+  
+  .blog-right h3 {
+    background: #c86d22;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-right-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #181717;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .comment-box {
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+  }
+  
+  .comment-box h3 {
+    text-align: left;
+  }
+  
+  .comment-form input,
+  .comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+  }
+  
+  .comment-form button {
+    margin: 10px 0;
+  }
+  
+  .hbt-btn1 {
+    border: 3px solid white;
+    background: transparent;
+    color: white;
+  }
+  
+  @media (max-width: 700px) {
+    .sub-header h1 {
+      font-size: 24px;
+    }
+  }
+  
+  /*-----------Contact Us----------------*/
+  .sub-header2 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("https://source.unsplash.com/1600x900/?donate,charity,child,gorilla,environment,food waste");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .sub-header2 h1 {
+    margin-top: 100px;
+    font-family: "Ephesis", cursive;
+    font-size: 50px;
+  }
+  
+  .location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+  }
+  
+  .location iframe {
+    width: 100%;
+  }
+  
+  .contact-us {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+  }
+  
+  .contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-col div .fa {
+    font-size: 28px;
+    color: #34077c;
+    margin: 10px;
+    margin-right: 30px;
+  }
+  
+  .contact-col div p {
+    padding: 0;
+  }
+  
+  .contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+  }
+  
+  .contact-col input,
+  .contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 3px solid #100da8;
+    box-sizing: border-box;
+  }
+  
+  .hbt-btn2 {
+    border: 3px solid #747c07;
+    background: rgb(194, 187, 187);
+    color: #161516;
+  }
+  .item {
+    border: 4px solid blue;
+  }
+  
+  /*--------------------Donations Page-------------------*/
+  
+  .donations {
+    background-color: #ecdede;
+  }
+  
+  .donations .boxContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+  }
+  
+  .donations .boxContainer .box {
+    background-color: #645c5c;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0px rgba(190, 38, 38, 0.425);
+    position: relative;
+    margin-bottom: 15px;
+  }
+  

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Samaritan Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ephesis&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a class="logo" href="index.html"><img src="images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="stakeholders.html">STAKEHOLDERS</a></li>
+                    <li><a href="donations.html">DONATIONS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>GOOD SAMARITAN FOUNDATION</h1>
+            <p>SERVICE TO HUMANITY AND MOTHER NATURE!</p>
+            <a href="about.html" class="hero-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+
+    <!--------------------Section Offices------------------>
+
+    <section class="offices">
+        <h1>OUR OFFICES</h1>
+        <p>Our offices are located in the heart of the city, providing a welcoming and professional environment for
+            individuals. </p>
+        <div class="row">
+            <a href="contact.html#location">
+                <div class="office-col">
+                    <img src="images/london.png
+                ">
+                    <div class="layer">
+                        <h3>Bumbogo Office</h3>
+                    </div>
+
+                </div>
+            </a>
+            <a href="contact.html#location">
+                <div class="office-col">
+                    <img src="images/newyork.png
+                ">
+                    <div class="layer">
+                        <h3>Kacyiru Office</h3>
+                    </div>
+
+                </div>
+            </a>
+            <a href="contact.html#location">
+                <div class="office-col">
+                    <img src="images/washington.png
+                ">
+                    <div class="layer">
+                        <h3>Nyarugenge Office</h3>
+                    </div>
+
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-----------Gratitude Section------------------>
+    <section class="gratitude">
+        <h1>What our Beneficiaries Say About Us</h1>
+        <p>We are incredibly grateful for the support provided by the Good Samaritan Foundation. The impact of their
+            initiatives has been profound in our lives. </p>
+        <div class="row">
+            <div class="gratitude-col">
+                <img src="images/Stephen.jpeg">
+                <div>
+                    <p>"The Good Samaritan Foundation has given us the opportunity to be part of a community. We have
+                        seen a positive impact on the lives of those in need. "</p>
+                    <h3>Stephen Rukundo</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+            </div>
+            <div class="gratitude-col">
+                <img src="images/rose.jpeg">
+                <div>
+                    <p>"The Good Samaritan Foundation has given us the opportunity to be part of a community. We have
+                        seen a positive impact on the lives of people in need. "</p>
+                    <h3>Rose Njeri</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--------------------Join Us Section------------------>
+
+    <section class="join-us">
+        <h1>Join Us</h1>
+        <p>As a non-profit organization, we are committed to fighting hunger and protecting the environment
+            simultaneously. </p>
+        <a href="contact.html#contact">
+            <button class="hero-btn">JOIN US</button>
+        </a>
+
+    </section>
+
+    <!--------------------Footer Section------------------>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>As a non-profit organization, we are committed to fighting hunger and protecting the environment
+            simultaneously. </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Good Samaritan Foundation</p>
+    </section>
+
+    <!-------------------- javascript for toggle menu ------------------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script src="nav.js"></script>
+
+</body>
+
+</html>

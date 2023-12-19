@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Samaritan Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ephesis&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header1">
+        <nav>
+            <a class="logo" href="index.html"><img src="images/logo.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="stakeholders.html">STAKEHOLDERS</a></li>
+                    <li><a href="donations.html">DONATIONS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>News and Updates <i class="fa fa-newspaper-o"></i></h1>
+    </section>
+    <!--------------------Blog Page------------------>
+    <section class="blog">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/marriot.png">
+                <h2 class="sub-title">First Donation By Marriot Hotel Rwanda <i class="fa fa-heart-o"></i></h2>
+                <p>The Good Samaritan Project reached a milestone with Marriott Kigali Hotel emerging as the
+                    trailblazer, making the inaugural food donation in support of the initiative. This significant
+                    contribution by Marriott Kigali sets a commendable standard, exemplifying the hotel's commitment to
+                    corporate social responsibility and community engagement. By taking a proactive stance in addressing
+                    issues of hunger and food waste, Marriott Kigali Hotel not only fulfills a critical role in the Good
+                    Samaritan Project but also becomes a pioneering force in the hospitality sector in Rwanda. This
+                    gesture underscores the potential for businesses to be catalysts for positive change,
+                    leveragingtheir resources to benefit the broader community.</p>
+                <br>
+                <p>
+                    Good Samaritan Project represents a noteworthy collaboration between the hospitality industry and
+                    social
+                    welfare initiatives in Rwanda. The decision to make the first food donation showcases the hotel's
+                    dedication to local community welfare and aligns with the broader goals of the initiative. Beyond
+                    being a generous contributor, Marriott Kigali's involvement serves as an inspiration for other
+                    hotels and businesses in the region, encouraging them to recognize their capacity to address social
+                    and environmental challenges. This proactive engagement by Marriott Kigali marks not just a singular
+                    act of goodwill but the initiation of a potential industry-wide movement toward responsible and
+                    impactful corporate citizenship. </p>
+                <br>
+                <p>The impact of Marriott Kigali Hotel's pioneering role extends beyond the immediate donation,
+                    contributing to the overarching objectives of the Good Samaritan Project. As the project gains
+                    momentum, Marriott Kigali sets a precedent for other stakeholders, illustrating the transformative
+                    potential of collaborative efforts between businesses and social initiatives. The hotel's leadership
+                    in this initiative not only addresses critical issues of food waste and hunger but also positions
+                    Marriott Kigali as a beacon of corporate responsibility, showcasing the positive influence that
+                    businesses can wield in creating a more compassionate and sustainable society in Rwanda.</p>
+
+                <div class="comment-box">
+                    <h3>Please Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn hbt-btn1">POST COMMENT</button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div class="blog-right-div">
+                    <span>Food Donation</span>
+                    <span>100</span>
+                </div>
+                <div class="blog-right-div">
+                    <span>Environmental Impact</span>
+                    <span>50</span>
+                </div>
+                <div class="blog-right-div">
+                    <span>Volunteers Page</span>
+                    <span>30</span>
+                </div>
+                <div class="blog-right-div">
+                    <span>Weekly Highlihghts</span>
+                    <span>10</span>
+                </div>
+
+            </div>
+        </div>
+
+        <!--------------------Join Us Section------------------>
+
+        <section class="join-us">
+            <h1>Join Us</h1>
+            <p>As a non-profit organization, we are committed to fighting hunger and protecting the environment
+                simultaneously. </p>
+            <a href="contact.html#contact">
+                <button class="hero-btn">JOIN US</button>
+            </a>
+
+        </section>
+
+        <!--------------------Footer Section------------------>
+
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>As a non-profit organization, we are committed to fighting hunger and protecting the environment
+                simultaneously. </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made with <i class="fa fa-heart-o"></i> by Good Samaritan Foundation</p>
+        </section>
+
+        <!-------------------- javascript for toggle menu ---------------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        <script src="nav.js"></script>
+
+</body>
+
+</html>

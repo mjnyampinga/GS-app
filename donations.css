@@ -1,0 +1,492 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  /*****************************  nevigation bar ****************************/
+  .nevbar {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+    display: flex;
+    background-color: transparent;
+  }
+  .logo img {
+    margin: 30px;
+    width: 150px;
+    border-radius: 30px;
+  }
+  
+  .menu {
+    flex: 1;
+    text-align: right;
+    margin-top: 40px;
+    margin-right: 100px;
+    /*WILL OCCUPY ALL THE SPACE IN THE ROW*/
+    text-align: right;
+    transition: 1s;
+  }
+  .menu ul li {
+    list-style: none;
+    display: inline-block;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 15px;
+    transition: 0.5s;
+    font-weight: 500;
+    position: relative;
+  }
+  .menu ul li a:hover {
+    color: rgb(1, 161, 1);
+  }
+  
+  .menu ul li a span {
+    color: #c3073f;
+  }
+  .menuicon {
+    margin: auto;
+    color: rgba(255, 255, 255, 0.5);
+    display: none;
+  }
+  .menuicon i span {
+    font-weight: 600;
+  }
+  
+  /* navbar mobile view */
+  @media only screen and (max-width: 700px) {
+    .nevbar {
+      background-color: black;
+    }
+    .logo img {
+      margin: 15px 12px;
+    }
+    .menu {
+      text-align: right;
+      margin-right: 0px;
+      position: absolute;
+      background-color: black;
+      width: 100%;
+      top: 49px;
+      max-height: 0px;
+      overflow: hidden;
+      box-shadow: 0px 10px 12px -1px rgb(0 0 0 / 10%);
+      transition: 0.5s;
+    }
+    .menu ul li {
+      list-style: none;
+      display: block;
+      margin: 25px 40px 35px auto;
+    }
+    .menu ul li a {
+      text-decoration: none;
+      color: white;
+      margin-left: 0px;
+      font-size: 15px;
+      transition: 0.5s;
+      font-size: 18px;
+    }
+    .menuicon {
+      display: block;
+      margin-right: 30px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+  
+  /**************  background cover image  ***************/
+  .cover {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("https://source.unsplash.com/1600x900/?donate,charity,child,gorilla,environment,food waste");
+    z-index: -200;
+    color: white;
+  }
+  .cover .information {
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+  .information h3 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 300;
+  }
+  .information h3 span {
+    float: right;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .information h2 {
+    font-size: 40px;
+  }
+  .information h1 span {
+    font-size: 110px;
+    line-height: 120px;
+    color: rgb(1, 161, 1);
+    letter-spacing: 10px;
+  }
+  .information a {
+    display: block;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .information a button {
+    padding: 8px 80px;
+    cursor: pointer;
+    letter-spacing: 5px;
+    background: linear-gradient(to right, transparent 50%, rgb(1, 161, 1) 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: 0.3s;
+    border: 2px solid white;
+    color: white;
+    margin: 40px 0 -50%;
+    width: 100%;
+  }
+  .information a button:hover {
+    background-position: right;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .cover .information {
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-top: 30%;
+    }
+    .information h3 {
+      font-size: 14px;
+      letter-spacing: 3px;
+      font-weight: 300;
+    }
+    .information h3 span {
+      float: none;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .information h2 {
+      font-size: 30px;
+    }
+    .information h1 span {
+      font-size: 70px;
+      line-height: 120px;
+      color: rgb(1, 161, 1);
+      letter-spacing: 10px;
+    }
+  }
+  
+  /* *******************************   About us  **************************************** */
+  .about {
+    width: 100%;
+    display: flex;
+    background-color: #f8f9fa;
+    padding-top: 80px;
+  }
+  /* About image */
+  .about .imgcontanner {
+    width: 100%;
+    position: relative;
+  }
+  .about .imgcontanner img {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 350px;
+    top: 80px;
+  }
+  
+  /* about content */
+  .about .imgcontanner {
+    width: 50%;
+    position: relative;
+  }
+  .about .imgcontanner .aboutimg {
+    position: absolute;
+    background: url("images/goldenheart.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    top: 80px;
+    left: 32%;
+  }
+  
+  /* about content */
+  .about .aboutcontent {
+    width: 50%;
+    padding: 80px 10% 80px 16%;
+    color: white;
+    background-color: rgb(1, 99, 1);
+  }
+  .aboutcontent h5 {
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .aboutcontent h1 {
+    font-weight: 600;
+    font-size: 50px;
+    padding-bottom: 20px;
+  }
+  .aboutcontent p {
+    padding-bottom: 30px;
+    line-height: 25px;
+  }
+  
+  /* donate button  */
+  .aboutcontent a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 8px 40px;
+    background: linear-gradient(to right, transparent 50%, rgb(1, 161, 1) 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: 0.3s;
+    border: 2px solid white;
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+  .aboutcontent a:hover {
+    background-position: right;
+  }
+  @media only screen and (max-width: 700px) {
+    /* *******************************   About us  **************************************** */
+    .about {
+      width: 100%;
+      display: block;
+      background-color: #f8f9fa;
+      padding-top: 0px;
+    }
+    /* About image */
+    .about .imgcontanner {
+      width: 100%;
+      padding: 3%;
+      padding-bottom: 50px;
+      box-sizing: border-box;
+    }
+    .about .imgcontanner .aboutimg {
+      position: relative;
+      width: 100%;
+      height: 450px;
+      top: 0px;
+      left: 0%;
+      display: none;
+    }
+  
+    /* about content */
+    .about .aboutcontent {
+      width: 100%;
+      padding: 65px 4%;
+      box-sizing: border-box;
+    }
+    .aboutcontent h5 {
+      margin-bottom: 10px;
+    }
+    .aboutcontent h1 {
+      font-size: 30px;
+    }
+  }
+  
+  /* ************************************  Service  ************************** */
+  .service {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  .service h5 {
+    color: rgb(1, 99, 1);
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  .service h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 10px;
+  }
+  
+  /* details service */
+  .service .details {
+    width: 75%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 60px;
+  }
+  .details .info {
+    padding: 0 15px;
+  }
+  .details .info .logo {
+    padding: 34px;
+    width: 45px;
+    margin: 0 auto;
+    background-color: rgb(129, 177, 129);
+    border-radius: 500px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+  }
+  .details .info #head {
+    padding: 20px 0 10px;
+    color: black;
+    font-weight: 500;
+    font-size: large;
+    font-family: serif;
+    color: blue;
+  }
+  .details .info p {
+    line-height: 25px;
+    font-size: 15px;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    /* ************************************  Service  ************************** */
+    .service {
+      padding: 70px 0;
+    }
+    .service h1 {
+      font-size: 30px;
+    }
+    /* details service */
+    .service .details {
+      width: 100%;
+      display: block;
+      padding-top: 25px;
+    }
+    .details .info {
+      padding: 0 15px 25px;
+    }
+    .details .info .logo {
+      padding: 34px;
+      width: 45px;
+    }
+  }
+  
+  /* ***************************************  Counter ************************** */
+  .contercontent {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    background-color: aliceblue;
+  }
+  .counterbox {
+    width: 100%;
+    height: 250px;
+  }
+  .contercontent .one {
+    background-color: rgb(1, 99, 1);
+  }
+  .counterbox .information {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .information .number p {
+    font-size: 50px;
+    color: rgb(1, 161, 1);
+    padding-right: 10px;
+  }
+  .information .text p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    /* ******************************   Counter  *********************** */
+    .contercontent {
+      display: block;
+    }
+    .counterbox {
+      height: 150px;
+    }
+  }
+  
+  /*-----------Join Us section----------------*/
+  
+  .join-us {
+    margin: 100px auto;
+    width: 80%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+      url("https://source.unsplash.com/1600x900/?donate,food waste");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .join-us p {
+    color: #fff;
+  }
+  .join-us h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .hero-btn:hover {
+    border: 3px solid #f44336;
+    background: #f44336, #fff;
+    transition: 0.5s;
+  }
+  
+  @media (max-width: 700px) {
+    .gratitude-col img {
+      margin-left: 0px;
+      margin-right: 15px;
+    }
+  }
+  
+  /*-----------Footer section----------------*/
+  
+  .footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  .icons .fa {
+    color: #34077c;
+    cursor: pointer;
+    margin: 0px 13px;
+    border-radius: 50%;
+    padding: 18px 0;
+  }
+  .fa-heart-o {
+    color: #df180a;
+  }
+  
