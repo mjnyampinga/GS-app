@@ -308,16 +308,16 @@
     border-radius: 10px;
     margin-bottom: 30px;
     text-align: left;
-    background: #a09c9c;
+    background: whitesmoke;
     padding: 20px 12px;
     cursor: pointer;
     display: flex;
   }
   
   .gratitude-col img {
-    height: 40px;
-    margin-left: 5px;
-    margin-right: 30px;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 50px;
     border-radius: 70%;
   }
   
