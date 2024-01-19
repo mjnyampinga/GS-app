@@ -152,7 +152,7 @@
   /*----------- stakeholders section ----------------*/
   
   .stakeholders {
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
@@ -196,6 +196,7 @@
     box-sizing: border-box;
     transition: 0.5s;
     align-items: center;
+    justify-content: center;
   }
   
   h3 {
@@ -530,7 +531,7 @@
     background-size: cover;
     text-align: center;
     color: #fff;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   
   .sub-header1 h1 {
